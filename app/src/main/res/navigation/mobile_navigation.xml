@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ni.edu.uca.my_uca.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navegation_see"
+        android:name="ni.edu.uca.my_uca.ui.see.SeeFragment"
+        android:label="@string/title_see"
+        tools:layout="@layout/fragment_see" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="ni.edu.uca.my_uca.ui.add.AddFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/navigation_edit"
+        android:name="ni.edu.uca.my_uca.navegation_edit"
+        android:label="@string/title_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/navigation_delete"
+        android:name="ni.edu.uca.my_uca.navegation_delete"
+        android:label="@string/title_delete"
+        tools:layout="@layout/fragment_delete" />
+</navigation>
